@@ -1,1 +1,1 @@
-Variadic Functions
+0x10. C - Variadic functions
