@@ -1,1 +1,1 @@
-Doubly Linked Lists
+# Solution to tasks on doubly linked list
