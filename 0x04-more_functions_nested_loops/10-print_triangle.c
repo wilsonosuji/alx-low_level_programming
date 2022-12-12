@@ -1,31 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *  * print_triangle - Print triangle dependent on the parameter size.
- *   * @size : The height of the triangle
- *    * Return: Void.
- *     */
+ * print_triangle - check for a digit
+ * @size : integer type
+ * Return:void
+ */
+
 void print_triangle(int size)
 {
-		int i;
-			int x;
-				int spaces;
-				;
-					for (i = 0; i < size; i++)
-							{
-										for (spaces = size - 1 - i; spaces > 0; spaces--)
-													{
-																	_putchar(' ');
-																			}
-												for (x = 0; x <= i; x++)
-															{
-																			_putchar('#');
-																					}
-														_putchar('\n');
-															}
-						if (size <= 0)
-								{
-											_putchar('\n');
-												}
+
+	int i = 1, ii;
+
+	while (i <= size && size > 0)
+	{
+		ii = 0;
+		while (ii < size - i)
+		{
+			_putchar(' ');
+			ii++;
+		}
+		ii = 0;
+		while (ii < i)
+		{
+			_putchar('#');
+			ii++;
+		}
+
+		_putchar('\n');
+		i++;
+	}
+	if (i == 1)
+		_putchar('\n');
 }
