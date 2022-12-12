@@ -1,1 +1,1 @@
-more pointers arrays and strings
+Solution to task on Arrays & Pointers
