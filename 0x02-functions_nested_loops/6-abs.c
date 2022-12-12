@@ -1,21 +1,24 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * * _abs - gives the absolute value
- * * of an integer.
- * *
- * * @n: input number as an integer.
- * *
- * * Return: absolute value
- * */
+ *_abs - absolute value of a number.
+ *@n: input.
+ *
+ *Return: absolute value
+ *
+ */
 int _abs(int n)
-		{
-				if (n >= 0)
-						{
-								return (n);
-									}
-					else
-							{
-									return (n * -1);
-										}
-		}
+{
+if (n > 0)
+{
+n = n * 1;
+}
+if (n == 0)
+{
+n = 0;
+}
+if (n < 0)
+{
+n = n * -1;
+}
+return (n);
+}

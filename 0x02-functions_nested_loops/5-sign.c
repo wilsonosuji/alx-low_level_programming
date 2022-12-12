@@ -1,29 +1,29 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * * print_sign - Determines if the input number
- * * greater, iqual or less than zero.
- * *
- * * @n: The input number as an integer.
- * *
- * * Return: 1 is greater than zero. 0 is zero.
- * * -1 is less than zero.
- * */
+ *print_sign - sign of a number.
+ *@n: input.
+ *
+ *Return: 1 and print + if n > 1
+ * 0 and print 0 if n = 0
+ * -1 and print - if n < 0
+ */
 int print_sign(int n)
 {
-		if (n > 0)
-					{
-								_putchar(43);
-									return (1);
-											}
-			else if (n < 0)
-						{
-									_putchar(45);
-										return (-1);
-												}
-				else
-							{
-										_putchar(48);
-											return (0);
-													}
-						_putchar('\n');
+int result;
+if (n > 0)
+{
+_putchar('+');
+result = 1;
+}
+if (n == 0)
+{
+_putchar('0');
+result = 0;
+}
+if (n < 0)
+{
+_putchar('-');
+result = -1;
+}
+return (result);
 }
