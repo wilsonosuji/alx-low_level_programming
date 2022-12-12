@@ -1,18 +1,24 @@
 #include "main.h"
-
 /**
- *  * _abs - check the code for Holberton School students.
- *   *
- *    * @n: is an integer argument
- *     *
- *      * Return: Always 0.
- *       */
-
+ *_abs - absolute value of a number.
+ *@n: input.
+ *
+ *Return: absolute value
+ *
+ */
 int _abs(int n)
 {
-		if (n >= 0)
-				{
-							return (n);
-								}
-			return (-n);
+if (n > 0)
+{
+n = n * 1;
+}
+if (n == 0)
+{
+n = 0;
+}
+if (n < 0)
+{
+n = n * -1;
+}
+return (n);
 }

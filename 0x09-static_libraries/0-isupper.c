@@ -1,16 +1,22 @@
 #include "main.h"
-
 /**
- *  * _isupper - check the code for Holberton School students.
- *   *
- *    * @c: is an integer param
- *     *
- *      * Return: Always 0.
- *       */
-
+ * _isupper - checkes upper case
+ * @c: print int
+ * Return: give 1 or 0
+ */
 
 int _isupper(int c)
 {
-
-		return (c >= 65 && c <= 90);
+if (c >= 'A' && c <= 'Z')
+{
+return (1);
 }
+
+else
+{
+return (0);
+}
+
+}
+
+
