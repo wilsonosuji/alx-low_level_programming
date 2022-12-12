@@ -1,1 +1,1 @@
-Even more pointers arrays strings
+Solutions to tasks on more pointers & arrays
